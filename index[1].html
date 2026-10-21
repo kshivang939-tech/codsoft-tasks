@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio website">
+  <title>Shivang Kumar | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home">Shivang<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">HELLO, WELCOME TO MY PORTFOLIO</p>
+          <h1>Hi, I'm <span>Shivang Kumar</span></h1>
+          <h2>Aspiring Web Developer</h2>
+          <p>I enjoy learning technology and creating clean, useful, and user-friendly websites. This portfolio showcases my skills and practice projects.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Decorative initials J">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="initials">J<span>K</span></div>
+          <div class="floating-card">✦ Learning by building</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p>I'm Shivang Kumar, a student and aspiring developer interested in web development and problem-solving. I'm building my skills by practising projects and learning how websites are designed and developed.</p>
+          <p>My goal is to keep learning, create accessible websites, and turn ideas into practical digital experiences.</p>
+        </div>
+        <div class="about-facts">
+          <div class="fact"><span>🎓</span><div><strong>Education</strong><small>Add your course or degree</small></div></div>
+          <div class="fact"><span>💻</span><div><strong>Interests</strong><small>Web development and technology</small></div></div>
+          <div class="fact"><span>📍</span><div><strong>Location</strong><small>India</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">WHAT I'M LEARNING</p>
+          <h2>My Skills</h2>
+          <p class="section-intro">Technologies and tools I am practising.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card"><div class="skill-icon html">5</div><h3>HTML5</h3><p>Page structure and semantic elements</p></article>
+          <article class="skill-card"><div class="skill-icon css">3</div><h3>CSS3</h3><p>Layouts, styling, and responsive design</p></article>
+          <article class="skill-card"><div class="skill-icon js">JS</div><h3>JavaScript</h3><p>Interactive features and behaviour</p></article>
+          <article class="skill-card"><div class="skill-icon git">↗</div><h3>Git & GitHub</h3><p>Version control and project sharing</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">SOME THINGS I'VE BUILT</p>
+        <h2>My Projects</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-preview preview-one"><span>JK</span><small>PERSONAL PORTFOLIO</small></div>
+          <div class="project-info"><p class="project-type">HTML · CSS</p><h3>Personal Portfolio</h3><p>A responsive website introducing me, my skills, and my work.</p><a href="#home">Explore this page ↗</a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-preview preview-two"><span>Launch your idea</span><small>LANDING PAGE CONCEPT</small></div>
+          <div class="project-info"><p class="project-type">HTML · CSS</p><h3>Landing Page</h3><p>A sample landing page concept with clear sections and calls to action.</p><a href="#contact">Discuss a project ↗</a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-preview preview-three"><span id="miniNumber">123</span><div class="mini-keys">7　8　9　÷<br>4　5　6　×<br>1　2　3　−</div><small>CALCULATOR CONCEPT</small></div>
+          <div class="project-info"><p class="project-type">HTML · CSS · JS</p><h3>Simple Calculator</h3><p>A practice project for learning buttons, input, and JavaScript logic.</p><a href="#contact">View project details ↗</a></div>
+        </article>
+      </div>
+      <p class="note">Note: These project cards are examples. Replace them with your own completed projects and links.</p>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-heading">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h2>Contact Me</h2>
+          </div>
+          <p>Have a question or want to connect? Send a message using the form.</p>
+          <div class="contact-detail"><span>✉</span><div><strong>Email</strong><p>your.email@example.com</p></div></div>
+          <div class="contact-detail"><span>⌖</span><div><strong>Location</strong><p>India</p></div></div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" placeholder="Enter your name" required>
+          <label for="email">Your email</label>
+          <input id="email" name="email" type="email" placeholder="Enter your email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
+          <button class="button primary" type="submit">Prepare Email</button>
+          <p class="form-message" id="formMessage" role="status">This demo opens your email app; it does not store messages.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner"><p>© <span id="year"></span> Shivang Kumar. Built with HTML, CSS & JavaScript.</p><a href="#home">Back to top ↑</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
