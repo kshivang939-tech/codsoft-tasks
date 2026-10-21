@@ -26,6 +26,6 @@ document.getElementById("contactForm").addEventListener("submit", (event) => {
   const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
 
   document.getElementById("formMessage").textContent =
-    "Opening your email app. Replace the demo recipient in script.js with your real email address.";
+    "Opening your email app. if it does not open,check your email app setting.";
   window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
 });
